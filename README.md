@@ -19,24 +19,29 @@ A modern, SEO-optimized static landing page for Meno - Turn Meetings into Meanin
 
 ## Quick Start
 
-### Option 1: Open Directly
+### Option 1: Using Node.js Dev Server (Recommended)
+```bash
+npm start
+# or
+npm run dev
+```
+
+Then visit `http://localhost:8000`
+
+### Option 2: Open Directly
 Simply open `index.html` in your browser.
 
-### Option 2: Local Server
-For testing with a local server:
-
+### Option 3: Other Local Servers
 ```bash
 # Using Python 3
 python3 -m http.server 8000
 
-# Using Node.js (install http-server globally first)
+# Using npx http-server
 npx http-server -p 8000
 
 # Using PHP
 php -S localhost:8000
 ```
-
-Then visit `http://localhost:8000`
 
 ## Deployment
 
@@ -59,10 +64,19 @@ vercel
 
 ## Customization
 
+### Add Your App Screenshots
+1. Place your screenshots in the `/screenshots` folder:
+   - `screenshot-transcription.png` - AI transcription interface
+   - `screenshot-customers.png` - Customer management view
+   - `screenshot-tasks.png` - Action tracking interface
+2. Recommended size: 1200x800px (3:2 aspect ratio)
+3. Optimize images to <500KB for fast loading
+4. See `/screenshots/README.md` for detailed guidelines
+
 ### Update Images
 Replace Unsplash URLs in `index.html` with your own images:
-- Hero image: Line 101
-- Benefits section image: Line 250
+- Hero background: Line 142
+- Benefits section image: Line 362
 
 ### Update Colors
 Modify Tailwind config in `<head>` section (lines 46-56) or use Tailwind's built-in slate colors.

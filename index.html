@@ -29,6 +29,8 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -158,8 +160,8 @@
                         Capture every conversation, know your customers better, and stay on top of every action with Meno.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#cta" class="bg-white text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-100 transition text-center shadow-lg">
-                            Start Free Trial
+                        <a href="https://my.menobase.app" class="bg-white text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-100 transition text-center shadow-lg">
+                            Get Started Free
                         </a>
                         <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition text-center">
                             Learn More
@@ -270,47 +272,128 @@
         </div>
     </section>
 
-    <!-- Social Proof / Benefits Section -->
-    <section class="py-16 md:py-24 bg-white">
+    <!-- App Screenshots Section -->
+    <section class="py-24 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=80"
-                         alt="Professional using Meno for meeting management"
-                         class="w-full h-auto object-cover"
-                         loading="lazy">
-                    <!-- Optional: Add a subtle border -->
-                    <div class="absolute inset-0 border border-slate-200 pointer-events-none"></div>
-                </div>
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                        Never Miss a Detail, Never Drop the Ball
-                    </h2>
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+                    See Meno in Action
+                </h2>
+                <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto">
+                    Everything you need to capture, organize, and act on meetings
+                </p>
+            </div>
+
+            <!-- Screenshot Grid -->
+            <div class="space-y-32">
+                <!-- Screenshot 1: Transcription (Image Left) -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <img src="/screenshots/screenshot-transcription.png"
+                             alt="Meno AI transcription and summary interface"
+                             class="w-full h-auto rounded-xl"
+                             loading="lazy">
+                    </div>
                     <div class="space-y-4">
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <p class="text-slate-600 text-lg">Save hours on meeting notes and follow-ups</p>
+                        <div class="inline-block px-4 py-1 bg-slate-100 text-slate-700 text-sm font-semibold rounded-full mb-2">
+                            AI-POWERED
                         </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <p class="text-slate-600 text-lg">Build deeper customer relationships with complete context</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-slate-900">
+                            Transcription & Summary
+                        </h3>
+                        <p class="text-xl text-slate-600 leading-relaxed">
+                            Upload or record meetings and get instant, accurate transcriptions with AI-generated summaries that capture key insights and decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 2: Customer Management (Image Right) -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="relative md:order-2">
+                        <img src="/screenshots/screenshot-customers.png"
+                             alt="Customer profile and meeting history in Meno"
+                             class="w-full h-auto rounded-xl"
+                             loading="lazy">
+                    </div>
+                    <div class="space-y-4 md:order-1">
+                        <div class="inline-block px-4 py-1 bg-slate-100 text-slate-700 text-sm font-semibold rounded-full mb-2">
+                            RELATIONSHIP MANAGEMENT
                         </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <p class="text-slate-600 text-lg">Ensure every commitment becomes completed action</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-slate-900">
+                            Customer Insights
+                        </h3>
+                        <p class="text-xl text-slate-600 leading-relaxed">
+                            Assign participants to customer profiles and build comprehensive interaction histories that give you complete context for every relationship.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 3: Task Management (Image Left) -->
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <img src="/screenshots/screenshot-tasks.png"
+                             alt="Smart action tracking and todo management in Meno"
+                             class="w-full h-auto rounded-xl"
+                             loading="lazy">
+                    </div>
+                    <div class="space-y-4">
+                        <div class="inline-block px-4 py-1 bg-slate-100 text-slate-700 text-sm font-semibold rounded-full mb-2">
+                            NEVER FORGET
                         </div>
-                        <div class="flex items-start">
-                            <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <p class="text-slate-600 text-lg">Access meeting insights instantly with AI-powered search</p>
-                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-slate-900">
+                            Smart Action Tracking
+                        </h3>
+                        <p class="text-xl text-slate-600 leading-relaxed">
+                            Automatically generate action items with what, who, and when. Keep track of every commitment and ensure nothing falls through the cracks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Benefits Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <!-- Full-width background image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&auto=format&fit=crop&q=80"
+                 alt="Professional using Meno for meeting management"
+                 class="w-full h-full object-cover"
+                 loading="lazy">
+            <!-- Light overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 to-white/80"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                    Never Miss a Detail, Never Drop the Ball
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-slate-700 text-lg font-medium">Save hours on meeting notes and follow-ups</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-slate-700 text-lg font-medium">Build deeper customer relationships with complete context</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-slate-700 text-lg font-medium">Ensure every commitment becomes completed action</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-slate-900 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-slate-700 text-lg font-medium">Access meeting insights instantly with AI-powered search</p>
                     </div>
                 </div>
             </div>
@@ -326,20 +409,13 @@
             <p class="text-xl text-slate-300 mb-8">
                 Start capturing, organizing, and acting on every conversation today.
             </p>
-            <form class="max-w-md mx-auto">
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <input type="email"
-                           placeholder="Enter your email"
-                           required
-                           class="flex-1 px-6 py-4 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-500"
-                           aria-label="Email address">
-                    <button type="submit"
-                            class="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition whitespace-nowrap">
-                        Get Started Free
-                    </button>
-                </div>
-                <p class="text-slate-400 text-sm mt-4">No credit card required. Start your free trial today.</p>
-            </form>
+            <div>
+                <a href="https://my.menobase.app"
+                   class="inline-block bg-white text-slate-900 px-10 py-4 rounded-lg text-lg font-semibold hover:bg-slate-100 transition shadow-lg">
+                    Get Started Free
+                </a>
+                <p class="text-slate-400 text-sm mt-4">No credit card required</p>
+            </div>
         </div>
     </section>
 
