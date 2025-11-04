@@ -237,10 +237,10 @@
     </section>
 
     <!-- Screenshots Section -->
-    <section class="py-20 md:py-32 gradient-bg">
+    <section class="py-20 md:py-32 bg-white">
         <div class="max-w-6xl mx-auto px-6 lg:px-8">
             <!-- Header -->
-            <div class="text-center mb-12">
+            <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-semibold text-slate-900 mb-6">
                     See Meno in action
                 </h2>
@@ -249,112 +249,96 @@
                 </p>
             </div>
 
-            <!-- Tab Chips -->
-            <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button class="tab-btn active px-6 py-2.5 rounded-full text-sm font-medium transition" data-tab="transcription">
-                    AI transcription
-                </button>
-                <button class="tab-btn px-6 py-2.5 rounded-full text-sm font-medium transition" data-tab="customers">
-                    Customer insights
-                </button>
-                <button class="tab-btn px-6 py-2.5 rounded-full text-sm font-medium transition" data-tab="tasks">
-                    Action tracking
-                </button>
-            </div>
+            <!-- Feature 1: Meeting Cards -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20 relative">
+                <!-- Decorative background -->
+                <div class="absolute -left-20 top-20 w-[200px] h-[200px] bg-rose-50 rounded-3xl hidden md:block" style="z-index: 1;"></div>
 
-            <!-- Content Area -->
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Screenshot -->
-                <div>
-                    <img id="screenshot-image"
-                         src="/screenshots/screenshot-transcription.png"
-                         alt="Meno screenshot"
-                         class="w-full h-auto rounded-2xl transition-opacity duration-300"
+                <div class="space-y-6 relative" style="z-index: 100;">
+                    <img src="/screenshots/meeting_card1.png"
+                         alt="Meeting card with auto-generated title and description"
+                         class="w-[90%] h-auto"
+                         loading="lazy">
+                    <img src="/screenshots/meeting_card2.png"
+                         alt="Meeting card with automatic summarization"
+                         class="w-[90%] h-auto"
                          loading="lazy">
                 </div>
-
-                <!-- Description -->
                 <div>
-                    <h3 id="screenshot-title" class="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
-                        AI-powered transcription
+                    <h3 class="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
+                        Never write meeting notes again with <span class="text-emerald-600">automatic summarization</span>
                     </h3>
-                    <p id="screenshot-description" class="text-xl text-slate-600 leading-relaxed">
-                        Upload or record meetings and get instant, accurate transcriptions with AI-generated summaries that capture key insights and decisions. Free up time to focus on customers and growth while routine work gets handled automatically.
+                    <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                        Every meeting gets an AI-generated title and summary instantly. Focus on the conversation while Meno captures everything automatically.
                     </p>
+                    <a href="https://my.menobase.app" class="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium text-lg">
+                        Start capturing meetings
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Feature 2: Transcriptions -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20 relative">
+                <!-- Decorative background -->
+                <div class="absolute -right-12 -top-20 w-[200px] h-[400px] bg-indigo-50 rounded-3xl hidden md:block" style="z-index: 1;"></div>
+
+                <div class="md:order-2 relative" style="z-index: 100;">
+                    <img src="/screenshots/transcriptions.png"
+                         alt="AI transcription with speaker identification and timestamps"
+                         class="w-full h-auto"
+                         loading="lazy">
+                </div>
+                <div class="md:order-1">
+                    <h3 class="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
+                        Get accurate transcriptions with <span class="text-emerald-600">speaker identification</span>
+                    </h3>
+                    <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                        Every conversation is transcribed with speaker labels and precise timestamps. Search through recordings, find key moments, and never miss important details.
+                    </p>
+                    <a href="https://my.menobase.app" class="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium text-lg">
+                        Try transcription now
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Feature 3: Action Items -->
+            <div class="grid md:grid-cols-2 gap-12 items-center relative">
+                <!-- Decorative background -->
+                <div class="absolute -left-12 top-20 w-[200px] h-[100px] bg-amber-50 rounded-3xl hidden md:block" style="z-index: 1;"></div>
+
+                <div class="space-y-6 relative" style="z-index: 100;">
+                    <img src="/screenshots/meeting_info.png"
+                         alt="Meeting information with action items tab"
+                         class="w-full h-auto"
+                         loading="lazy">
+                    <img src="/screenshots/action_items.png"
+                         alt="Auto-generated action items with assignee and due date"
+                         class="w-full h-auto"
+                         loading="lazy">
+                </div>
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-semibold text-slate-900 mb-6">
+                        Never miss a follow-up with <span class="text-emerald-600">auto-generated action items</span>
+                    </h3>
+                    <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                        Every meeting automatically generates action items with who, when, and what. Keep track of every commitment and ensure nothing falls through the cracks.
+                    </p>
+                    <a href="https://my.menobase.app" class="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium text-lg">
+                        Track your action items
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <style>
-        .tab-btn {
-            background-color: white;
-            color: #64748b;
-            border: 1px solid #e2e8f0;
-        }
-
-        .tab-btn:hover {
-            background-color: #f8fafc;
-            color: #334155;
-            border-color: #cbd5e1;
-        }
-
-        .tab-btn.active {
-            background-color: #0f172a;
-            color: white;
-            border-color: #0f172a;
-        }
-    </style>
-
-    <script>
-        const tabs = document.querySelectorAll('.tab-btn');
-        const screenshot = document.getElementById('screenshot-image');
-        const title = document.getElementById('screenshot-title');
-        const description = document.getElementById('screenshot-description');
-
-        const content = {
-            transcription: {
-                image: '/screenshots/screenshot-transcription.png',
-                title: 'AI-powered transcription',
-                description: 'Upload or record meetings and get instant, accurate transcriptions with AI-generated summaries that capture key insights and decisions. Free up time to focus on customers and growth while routine work gets handled automatically.'
-            },
-            customers: {
-                image: '/screenshots/screenshot-customers.png',
-                title: 'Complete customer context',
-                description: 'Assign participants to customer profiles and build comprehensive interaction histories that give you complete context for every relationship. Know exactly what was discussed, when, and what actions need to be taken.'
-            },
-            tasks: {
-                image: '/screenshots/screenshot-tasks.png',
-                title: 'Never miss a thing',
-                description: 'Automatically generate action items with what, who, and when. Keep track of every commitment and ensure nothing falls through the cracks. Stay on top of follow-ups and deliver on every promise.'
-            }
-        };
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active class from all tabs
-                tabs.forEach(t => t.classList.remove('active'));
-
-                // Add active class to clicked tab
-                tab.classList.add('active');
-
-                // Get tab data
-                const tabName = tab.getAttribute('data-tab');
-                const tabContent = content[tabName];
-
-                // Fade out
-                screenshot.style.opacity = '0';
-
-                // Update content after fade
-                setTimeout(() => {
-                    screenshot.src = tabContent.image;
-                    title.textContent = tabContent.title;
-                    description.textContent = tabContent.description;
-                    screenshot.style.opacity = '1';
-                }, 300);
-            });
-        });
-    </script>
 
     <!-- CTA Section -->
     <section class="py-20 md:py-32 gradient-bg">
