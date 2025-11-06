@@ -26,13 +26,13 @@
     <meta property="og:description" content="Capture every conversation, know your customers better, and stay on top of every action with Meno.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://menobase.app">
-    <meta property="og:image" content="https://menobase.app/og-image.jpg">
+    <meta property="og:image" content="https://menobase.app/banner.png">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Meno - Turn Meetings into Meaning">
     <meta name="twitter:description" content="Capture every conversation, know your customers better, and stay on top of every action with Meno.">
-    <meta name="twitter:image" content="https://menobase.app/twitter-image.jpg">
+    <meta name="twitter:image" content="https://menobase.app/banner.png">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://menobase.app">
@@ -72,6 +72,11 @@
         /* Custom gradient */
         .gradient-bg {
             background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        }
+
+        /* Text clarity for hero section */
+        .hero-text {
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
@@ -113,12 +118,15 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 md:pt-40 md:pb-28 gradient-bg">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold text-slate-900 leading-tight mb-6">
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 relative bg-cover bg-center bg-no-repeat" style="background-image: url('/banner.png');">
+        <!-- Gradient overlay for better text readability -->
+        <div class="absolute inset-0" style="background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.92) 100%);"></div>
+
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold text-slate-900 leading-tight mb-6 hero-text">
                 Turn meetings into <span class="text-slate-600">meaning</span>
             </h1>
-            <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed hero-text">
                 Capture every conversation, know your customers better, and stay on top of every action with Meno.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
